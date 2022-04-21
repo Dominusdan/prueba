@@ -1,0 +1,118 @@
+/*este el codigo que afecta todo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/*Estos son los estilos para el menu*/
+#menu{
+    max-width: auto;
+    min-height: 50px;
+    background: rgb(104, 104, 197);
+    margin: auto;
+}
+
+#menu ul{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+}
+
+#menu a{
+color: white;
+display: block;
+padding: 20px;
+text-decoration: none;
+background: rgb(41, 14, 92);
+font-size: 18px;
+}
+
+#menu a:hover{  /*Efecto al pasar el mouse por encima*/
+    background: rgb(107, 33, 177);
+}
+
+
+/*Slider*/
+body{
+    background-color: rgb(174, 212, 245);
+}
+
+.slider{
+    width: 95%;
+    height: 300px; /*esta es para la altura del slider*/
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0%;
+    width: 400%;
+    display: flex;
+    animation: slide 20s infinite alternate;
+    animation-timing-function:linear;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*Esto es para el nosotros.html*/
+
+
+
+#imagen{
+    padding: 10px;
+    margin: 10px;
+}
+
+#servicios{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*Este es el estilo de imágenes y textos de "Nosotros.html"*/
+#teximagen{
+    margin: 10px;
+    padding: 10px;
+}
+
+#contacto{
+    padding: 10px;
+    margin: 10px;
+}
+
+iframe{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.fondocss {
+    position: fixed;
+    top:0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0
+    }
